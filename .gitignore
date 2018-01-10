@@ -189,3 +189,7 @@
 /pldbgview/viewmdl_contract_i.h
 /.vs/WinDbgTool/v14/*.suo
 /DbgEngine/dbgengine_contract_i_p.c
+.vs
+/makedump/Debug
+/makedump/Release
+/makedump/x64/Release
