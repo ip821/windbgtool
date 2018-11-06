@@ -117,15 +117,15 @@ STDMETHODIMP CDump::CopyDlls(DWORD dwProcessId, BSTR bstrPath)
 			CComBSTR bstrSourceFolder(szModName);
 			CComBSTR bstrDestFolder(bstrPath);
 
-			hr = CopyFileImpl(bstrSourceFolder, bstrDestFolder, _T("clr.dll"));
+			hr = CopyFileImpl(bstrSourceFolder, bstrDestFolder, CComBSTR(L"clr.dll"));
 			if (FAILED(hr))
 				return hr;
 
-			hr = CopyFileImpl(bstrSourceFolder, bstrDestFolder, _T("mscordacwks.dll"));
+			hr = CopyFileImpl(bstrSourceFolder, bstrDestFolder, CComBSTR(L"mscordacwks.dll"));
 			if (FAILED(hr))
 				return hr;
 
-			hr = CopyFileImpl(bstrSourceFolder, bstrDestFolder, _T("sos.dll"));
+			hr = CopyFileImpl(bstrSourceFolder, bstrDestFolder, CComBSTR(L"sos.dll"));
 			if (FAILED(hr))
 				return hr;
 		}
